@@ -1,0 +1,66 @@
+@startuml
+
+!include $block.iuml
+!include $term_block_3_level.iuml
+!include $wire.iuml
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Рейки, модульное оборудование
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' Рейка с автоматами техники + розеток
+!ifdef RAIL_LO
+!include _din_rail_7_circuit_breakers.iuml
+!endif
+
+' Рейка с УЗО + автоматы освещения
+!ifdef RAIL_MI
+!include _din_rail_9_rccb.iuml
+!endif
+
+' Рейка с клеммами + ввод
+!ifdef RAIL_UP
+!include _din_rail_1_ingress_terminals.iuml
+!endif
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Соединения ввода
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!ifdef RAIL_UP && SHOW_INGRESS
+r1:sd:w        -> r1:vr:e                  $wire(Brown, "10")
+r1:sd__n:w     -> r1:vr__n:e               $wire(Blue, "10")
+!endif
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Подключение УЗО к питанию
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!ifdef RAIL_UP && RAIL_MI && SHOW_INGRESS
+r9:rccb_common:e        -> r1:vr:w               $wire(Brown, "10")
+r9:rccb_common__n:e     -> r1:vr__n:w            $wire(Blue, "10")
+
+'r9:rccb_wo_bathroom:e        -> r1:vr:w          $wire(Brown, "6")
+'r9:rccb_wo_bathroom__n:e     -> r1:vr__n:w       $wire(Blue, "6")
+
+'r9:rccb_wo_bathroom:e -> r9:rccb_common:e        $wire(Brown, "10")
+'r9:rccb_wo_bathroom__n:e -> r9:rccb_common__n:e  $wire(Blue, "10")
+!endif
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Подключение автоматов к УЗО
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+!ifdef RAIL_LO && RAIL_MI
+r7:cb_permanent:e         -> r9:rccb_common:w         $wire(Brown, "10")
+!endif
+
+!ifdef RAIL_LO && RAIL_MI
+r7:cb_wo_bathroom:e     -> r9:rccb_wo_bathroom:w    $wire(Brown, "6")
+!endif
+
+!ifdef RAIL_MI
+r9:rccb_common:w -> r9:cb_l_room1:e    $wire(Brown, "6")
+!endif
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

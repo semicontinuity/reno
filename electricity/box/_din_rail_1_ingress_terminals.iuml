@@ -1,0 +1,55 @@
+@startuml
+!include $block.iuml
+!include $modules.iuml
+!include $modules_terminals.iuml
+
+!include $term_block_2_level.iuml
+!include $term_block_3_level.iuml
+!define ABBR_BUT выкл
+
+subgraph cluster_r1 {
+  style=invis
+  label="Клеммники"
+
+  r1
+  $block_start()
+
+!ifdef RAIL_UP && SHOW_INGRESS
+    $module_2u_switch_disconnector("QW1", sd, "щит")
+    $module_2u_voltage_relay(      "KU1", vr, "реле напряжения")
+!endif
+
+    $term_block_2_level_l1_l2("X01", l_balcony,     "свет балкон")
+    $term_block_2_level_l1_l2("X02", s_balcony,     "выкл балкон")
+
+    $term_block_2_level_l1_l2("X03", l_kitchen,     "свет кухня")
+    $term_block_2_level_l1_l2("X04", s_kitchen,     "выкл кухня")
+
+    $term_block_2_level_l1_l2("X05", l_corr_1,      "свет коридор 1")
+    $term_block_2_level_l1_l2("X06", s_corr_1_1,    "выкл коридор 1.1")
+    $term_block_2_level_l1_l2("X07", s_corr_1_2,    "выкл коридор 1.2")
+    $term_block_2_level_l1_l2("X08", l_corr_2,      "свет коридор 2")
+    $term_block_2_level_l1_l2("X09", s_corr_2_1,    "выкл коридор 2.1")
+    $term_block_2_level_l1_l2("X10", s_corr_2_2,    "выкл коридор 2.2")
+
+    $term_block_2_level_l1_l2("X11", l_room1,       "свет комн 1")
+    $term_block_2_level_l1_l2("X12", s_room1,       "выкл комн 1")
+
+    $term_block_2_level_l1_l2("X13", l_room2,       "свет комн 2")
+    $term_block_2_level_l1_l2("X14", s_room2,       "выкл комн 2")
+
+    $term_block_2_level_l1_l2("X15", l_room3,       "свет комн 3")
+    $term_block_2_level_l1_l2("X16", s_room3,       "выкл комн 3")
+
+    $term_block_2_level_l1_l2("X17", l_toilet,      "свет туалет")
+    $term_block_2_level_l1_l2("X18", s_toilet,      "выкл туалет")
+
+    $term_block_2_level_l1_l2("X19", l_bathroom,    "свет ванная")
+    $term_block_2_level_l1_l2("X20", s_bathroom,    "выкл ванная")
+
+    $module_1u_1io_new("", res1_3, " ")
+
+  $block_end()
+}
+
+@enduml

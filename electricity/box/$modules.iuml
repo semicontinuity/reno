@@ -1,0 +1,55 @@
+@startuml
+!include $modules_generic_1u.iuml
+!include $modules_generic_2u.iuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u_cb($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="", $model="ABB S200", $bar="", $bar_pos="both")
+!if $bar == "l"
+!$bar_top_color="brown"
+!else
+!$bar_top_color="white"
+!endif
+
+$module_1u_1io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="автоматический выключатель", $post_text=$model, $bar_top_color=$bar_top_color, $bar_top_pos=$bar_pos)
+
+'$module_1u($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="автоматический выключатель", $post_text=$model)
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u_shunt_trip($number, $id, $title, $bgcolor="white", $default_port_suffix="")
+'$module_1u($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="расцепитель", $post_text="ABB S2C-A2L")
+$module_1u_1io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="расцепитель", $post_text="ABB S2C-A2L", $bar_top_color="white", $bar_top_pos="right")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_2u_rccb($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="", $model="ABB", $bar_l_pos="", $bar_n_pos="")
+
+!$bar_top_1_color="white"
+!if $bar_l_pos != ""
+!$bar_top_1_color="brown"
+!else
+!$bar_l_pos = "both"
+!endif
+
+!$bar_top_2_color="white"
+!if $bar_n_pos != ""
+!$bar_top_2_color="blue"
+!else
+!$bar_n_pos = "both"
+!endif
+
+$module_2u_2io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $aux_port_suffix="__n", $pre_text="УЗО", $post_text=$model, $bar_top_1_color=$bar_top_1_color, $bar_top_2_color=$bar_top_2_color, $bar_top_1_pos=$bar_l_pos, $bar_top_2_pos=$bar_n_pos)
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_2u_switch_disconnector($number, $id, $title, $bgcolor="white")
+$module_2u_2io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="рубильник", $post_text="ABB SD202/63")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_2u_voltage_relay($number, $id, $title, $bgcolor="white", $default_port_suffix="__l")
+$module_2u_2io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="реле напряжения", $post_text="Новатек РН-263t")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u_terminal($number, $id, $title, $bgcolor="white")
+'$module_1u($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="расцепитель", $post_text="ABB S2C-A2L")
+$module_1u_1io_new($number, $id, $title, $bgcolor=$bgcolor, $default_port_suffix="", $pre_text="клемма", $post_text="10мм2")
+!endprocedure
+
+@enduml

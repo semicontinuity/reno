@@ -1,0 +1,44 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_2_level($number, $id, $title, $text_top, $text_bot, $point_size="12", $bgcolor="wheat", $default_port_suffix="__bot")
+!$top = $id + "__top"
+!$bot = $id + "__bot"
+
+'!$i = $id + "__i"
+'!$o = $id + "__o"
+
+'      <tr>
+'          <td align="text" bgcolor="$bgcolor" port="$i" border="1"><b><font color="darkblue">$number</font></b></td>
+'          <td align="text" bgcolor="$bgcolor" port="$o" border="1"><font point-size="$point_size"> $title</font><br align="left"/></td>
+'      </tr>
+
+!ifdef EXPANDED
+'      <tr><td colspan="2" align="text" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>|</b>$title<br align="left"/></td></tr>
+      <tr><td colspan="2" align="text" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>| </b>$title <br align="left"/></td></tr>
+
+'!$i_top = $id + "__i_top"
+'!$i_bot = $id + "__i_bot"
+'!$o_top = $id + "__o_top"
+'!$o_bot = $id + "__o_bot"
+
+'      <tr><td align="text" bgcolor="#e0e0e0" port="$i_top" border="1">top</td> <td align="text" port="$o_top" border="1" width="100%">$text_top<br align="left"/></td></tr>
+'      <tr><td align="text" bgcolor="#e0e0e0" port="$i_bot" border="1">bot</td> <td align="text" port="$o_bot" border="1" width="100%">$text_bot<br align="left"/></td></tr>
+      <tr><td colspan="2" align="text" port="$top" border="1"><b><font color="darkcyan">вер</font>|</b> $text_top<br align="left"/></td></tr>
+      <tr><td colspan="2" align="text" port="$bot" border="1"><b><font color="darkcyan">ниж</font>|</b> $text_bot<br align="left"/></td></tr>
+!else
+!$port = $id + $default_port_suffix
+'      <tr><td colspan="2" align="text" port="$port" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>|</b>$title<br align="left"/></td></tr>
+
+      <tr><td colspan="2" align="text" port="$port" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>| </b>$title <br align="left"/></td></tr>
+!endif
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_2_level_n_l($number, $id, $title)
+$term_block_2_level($number, $id, $title, "N", "L")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_2_level_l1_l2($number, $id, $title)
+$term_block_2_level($number, $id, $title, "L1", "L2")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

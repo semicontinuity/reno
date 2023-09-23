@@ -1,0 +1,28 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $block_start()
+[
+  shape = none
+  fontname="Courier"
+  label = <
+       <table border="0" cellspacing="0" cellpadding="0">
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $block_end()
+       </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $separator()
+      <tr><td bgcolor="gray" colspan="2"></td></tr>
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $bridge()
+' Place a dot, meaning a bridge between two units
+' Use like this: ABOVE -> BELOW:n $bridge()
+
+[arrowhead=dot, style="dotted", penwidth=0; ]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

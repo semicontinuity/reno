@@ -1,0 +1,42 @@
+@startdot
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' EXPANDED
+'
+' SHOW_TERMINALS_WALL_OUTLETS
+' SHOW_TERMINALS_LIGHTS
+' SHOW_TERMINALS_BUTTONS
+' SHOW_TERMINALS_SENSORS
+' SHOW_TERMINALS_BUTTON_BACKLIGHTS
+'
+' SHOW_WIRING_OUTLETS
+' SHOW_WIRING_LIGHTS
+'
+' SHOW_HOT
+' SHOW_N
+'
+' SHOW_BRIDGES
+' SHOW_JUMPERS
+' SHOW_PATCHES
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'!define SHOW_BUSBARS
+!include $block.iuml
+!include $term_block_3_level.iuml
+!include $wire.iuml
+
+
+digraph box {
+
+label    = "$label"
+fontname = "Helvetica"
+rankdir  = "LR"
+
+!ifndef RANKSEP
+!define RANKSEP 2
+!endif
+
+graph [ ranksep=RANKSEP; ];
+
+!include _wiring_contents.iuml
+
+}
+@enddot

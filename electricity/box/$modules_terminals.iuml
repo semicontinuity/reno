@@ -1,0 +1,8 @@
+@startuml
+!include $modules_generic_03u.iuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_03u_terminal($number, $id, $title, $bgcolor="white", $bar_top_1_color="white", $bar_top_1_pos="", $bar_top_2_color="", $bar_top_2_pos="")
+$module_03u($number, $id, $title, $bgcolor=$bgcolor, $bar_top_1_color="red", $bar_top_2_color="green", $bar_top_1_pos=$bar_top_1_pos, $bar_top_2_pos=$bar_top_2_pos)
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

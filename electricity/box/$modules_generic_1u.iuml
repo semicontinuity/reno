@@ -1,0 +1,162 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u_1io_newX($number, $id, $title, $bgcolor="white", $p1_text="L", $p2_text="N", $default_port_suffix="", $aux_port_suffix="__n", $pre_text="", $post_text="", $bar_top_1="white", $bar_top_2="white")
+!$port = $id + $default_port_suffix
+!$port_aux = $id + $aux_port_suffix
+
+'      <tr><td bgcolor="gray" colspan="3"></td></tr>
+      <tr>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td ><font point-size="12"> $number $pre_text </font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td port="$port"><font point-size="20">$p1_text</font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td > <font point-size="22">$title</font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td port="$port_aux"><font point-size="20">$p2_text</font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td ><font point-size="12"> $post_text </font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bar_top_1"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2"></td>
+      </tr>
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u($number, $id, $title, $bgcolor="white", $default_port_suffix="", $pre_text="", $post_text="")
+'!$i = $id + "__i"
+'!$o = $id + "__o"
+'
+'    <tr>
+'        <td align="text"                    port="$i" border="1"><font color="red"><b>$number</b></font></td>
+'        <td align="text" bgcolor="$bgcolor" port="$o" border="1"><br/> $title<br/><br align="left"/></td>
+'    </tr>
+!$port = $id + $default_port_suffix
+<tr>
+<td colspan="2" align="text" port="$port" border="1" bgcolor="$bgcolor">
+ <font color="#D0D0D0">$pre_text</font><br/>
+<b><font color="red">  $number</font>| </b><font point-size="22" > $title</font><br align="left"/>
+ <font color="#D0D0D0"><b>$post_text</b></font><br/>
+
+' $post_text<br/>
+</td>
+</tr>
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_1u_1io_new($number, $id, $title, $bgcolor="white", $default_port_suffix="", $aux_port_suffix="", $pre_text="", $post_text="", $bar_top_color="white", $bar_top_pos="both")
+!$port = $id + $default_port_suffix
+!$port_h = $id + $default_port_suffix + "_h"
+
+!if $bar_top_pos == "both"
+!$bar_top_color_1 = $bar_top_color
+!$bar_top_color_2 = $bar_top_color
+!$bar_top_color_3 = $bar_top_color
+!endif
+
+!if $bar_top_pos == "left"
+!$bar_top_color_1 = $bar_top_color
+!$bar_top_color_2 = $bar_top_color
+!$bar_top_color_3 = "white"
+!endif
+
+!if $bar_top_pos == "right"
+!$bar_top_color_1 = "white"
+!$bar_top_color_2 = $bar_top_color
+!$bar_top_color_3 = $bar_top_color
+!endif
+
+      <tr>
+        <td bgcolor="gray"><font point-size="1"> </font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_color_1"></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td ><font point-size="8"> $number $pre_text </font></td>
+        <td bgcolor="gray"><font point-size="1"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_color_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td port="$port"> <font point-size="16">$title</font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_color_2" port="$port_h"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td ><font point-size="8"> $post_text </font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_color_3"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"><font point-size="1"> </font></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_color_3"></td>
+      </tr>
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+@enduml

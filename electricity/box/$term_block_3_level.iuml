@@ -1,0 +1,66 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level($number, $id, $title, $text_top, $text_mid, $text_bot, $bgcolor="#e0e0e0", $point_size="12", $default_port_suffix="__top")
+!$top = $id + "__top"
+!$mid = $id + "__mid"
+!$bot = $id + "__bot"
+
+'!$i = $id + "__i"
+'!$o = $id + "__o"
+
+!ifdef EXPANDED
+'      <tr>
+'          <td align="text" bgcolor="$bgcolor" port="$i" border="1"><b>$number</b></td>
+'          <td align="text" bgcolor="$bgcolor" port="$o" border="1"><font point-size="$point_size"> $title</font><br align="left"/></td>
+'      </tr>
+      <tr><td colspan="2" align="text" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>|</b>$title<br align="left"/></td></tr>
+
+'!$i_top = $id + "__i_top"
+'!$i_mid = $id + "__i_mid"
+'!$i_bot = $id + "__i_bot"
+'!$o_top = $id + "__o_top"
+'!$o_mid = $id + "__o_mid"
+'!$o_bot = $id + "__o_bot"
+
+'      <tr><td align="text" bgcolor="$bgcolor" port="$i_top" border="1">top</td> <td align="text" port="$o_top" border="1">$text_top<br align="left"/></td></tr>
+'      <tr><td align="text" bgcolor="$bgcolor" port="$i_mid" border="1">mid</td> <td align="text" port="$o_mid" border="1">$text_mid<br align="left"/></td></tr>
+'      <tr><td align="text" bgcolor="$bgcolor" port="$i_bot" border="1">bot</td> <td align="text" port="$o_bot" border="1">$text_bot<br align="left"/></td></tr>
+
+      <tr><td colspan="2" align="text" port="$top" border="1"><b><font color="darkcyan">вер</font>|</b> $text_top<br align="left"/></td></tr>
+      <tr><td colspan="2" align="text" port="$mid" border="1"><b><font color="darkcyan">сре</font>|</b> $text_mid<br align="left"/></td></tr>
+      <tr><td colspan="2" align="text" port="$bot" border="1"><b><font color="darkcyan">ниж</font>|</b> $text_bot<br align="left"/></td></tr>
+!else
+!$port = $id + $default_port_suffix
+      <tr><td colspan="2" align="text" port="$port" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>| </b>$title <br align="left"/></td></tr>
+!endif
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_light_2x($number, $id, $title)
+$term_block_3_level($number, $id, $title, "св общий", "св 1", "св 2", $default_port_suffix="__mid")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_button_n_l_reserved($number, $id, $title)
+$term_block_3_level($number, $id, $title, "N", "L", "запас", $default_port_suffix="__mid")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_button_light_and_special($number, $id, $title)
+$term_block_3_level($number, $id, $title, "кн общий", "кн освещ", "кн спец")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_button_light_2x($number, $id, $title)
+$term_block_3_level($number, $id, $title, "кн общий", "кн осв 1", "кн осв 2", $default_port_suffix="__top")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_3_signals($number, $id, $title)
+$term_block_3_level($number, $id, $title, "сигнал 1", "сигнал 2", "сигнал 3", $default_port_suffix="__top")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_com_neg_2_gpio($number, $id, $title)
+$term_block_3_level($number, $id, $title, "общий", "I/O 1", "I/O 2")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_3_level_com_pos_2_gpio($number, $id, $title)
+$term_block_3_level($number, $id, $title, "общий", "I/O 1", "I/O 2")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

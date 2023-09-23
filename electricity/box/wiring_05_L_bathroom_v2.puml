@@ -1,0 +1,96 @@
+@startdot
+!include $block.iuml
+!include $term_block_3_level.iuml
+!include $modules.iuml
+!include $modules_generic_1u.iuml
+!include $cable_3wire.iuml
+!include $cable_4wire.iuml
+!include $wire.iuml
+
+
+digraph box {
+
+label = "Схема сдвоенной линии освещения ванной\nсоединения в щите - клеммы на DIN рейку\nВ ванной - шлейф, соединения с помощью клемм WAGO"
+
+fontname = "Helvetica"
+rankdir  = "LR"
+
+'!ifndef RANKSEP
+'!define RANKSEP 1
+'!endif
+
+graph [ ranksep=RANKSEP; ];
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+subgraph cluster_r1 {
+  style=invis
+
+  r1
+  $block_start()
+    $module_1u_1io_new("", pe, "       шина PE      ")
+    $module_1u_1io_new("", n,  "       шина N       ")
+
+    $module_1u_1io_new("", "", "            ")
+
+    $module_1u_cb("Q5", cb_l_kitchen, "свет ванная+туалет", $model="ABB S201 (B) 6A", $bar="l", $bar_pos="right")
+
+    $module_1u_1io_new("", "", "            ")
+
+    $term_block_3_level_button_light_2x(01, comm_kitchen_1,      "клемма свет ванной")
+    $term_block_3_level_button_light_2x(02, comm_kitchen_2,      "клемма свет ванной 2")
+
+  $block_end()
+}
+
+' кабели
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+c_room_l_light $cable_4wire("кабель<br/>ВВГнг(LS)a 4x1.5мм2 <br/>на светильник")
+c_room_l_but   $cable_3wire("кабель<br/>ВВГнг(LS)a 3x1.5мм2 <br/>на выключатель")
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' подключение кабель выключателя
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+r1:cb_l_kitchen:w        -> c_room_l_but:i_brown:w    $wire(Brown,        "2.5") [label="фаза постоянная"]
+r1:comm_kitchen_1__top:w -> c_room_l_but:i_blue:w     $wire(Blue,         "1.5") [label="фаза коммутируемая (1)"]
+r1:comm_kitchen_2__top:w -> c_room_l_but:i_yg:w       $wire(YellowGreen,  "1.5") [label="фаза коммутируемая (2)"]
+
+' подключение кабеля ламп
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+r1:pe:e                  -> c_room_l_light:i_yg       $wire(YellowGreen,  "1.5")
+r1:n:e                   -> c_room_l_light:i_blue     $wire(Blue,         "1.5")
+r1:comm_kitchen_1__top:e -> c_room_l_light:i_red      $wire(Red,          "1.5")  [label="фаза коммутируемая (1)"]
+r1:cb_l_kitchen:w        -> c_room_l_light:i_white    $wire(Brown,        "2.5")  [label="фаза постоянная"]
+
+' выключатели
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+sw1 [shape="box" label="клавиша 1 (свет ванной)"]
+sw2 [shape="box" label=<<s>клавиша 2 (вентилятор)</s>> ]
+
+c_room_l_but:i_brown:e -> sw1:s $wire(Brown,         "1.5") [label="фаза постоянная"]
+c_room_l_but:i_brown:e -> sw2:n $wire(Brown,         "1.5")
+c_room_l_but:i_blue:e  -> sw1:n $wire(Blue,          "1.5") [label="фаза коммутируемая (1)"]
+c_room_l_but:i_yg:e    -> sw2:s $wire(YellowGreen,   "1.5") [label="фаза коммутируемая (2)"]
+
+' потребители
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+lamp1 [label="лампы ванной"]
+lamp2 [label="вентилятор"]
+lamp3 [label="подсветка зеркала"]
+
+c_room_l_light:i_yg:e    -> lamp1:n $wire(YellowGreen,  "1.5") [label="защитное заземление"]
+c_room_l_light:i_blue:e  -> lamp1:s $wire(Blue,         "1.5") [label="ноль"]
+c_room_l_light:i_red:e   -> lamp1:w $wire(Red,          "1.5") [label="фаза коммутируемая (1)"]
+
+lamp1:n                  -> lamp2:e $wire(YellowGreen,  "1.5") [label="защитное заземление"]
+lamp1:s                  -> lamp2:s $wire(Blue,         "1.5") [label="ноль"]
+lamp1:w                  -> lamp2:n $wire(Red,          "1.5") [label="фаза коммутируемая (1)"]
+c_room_l_light:i_white:e -> lamp2:w $wire(White,        "1.5") [label="фаза постоянная"]
+
+lamp2:e                  -> lamp3:w $wire(YellowGreen,  "1.5") [label="защитное заземление"]
+lamp2:s                  -> lamp3:s $wire(Blue,         "1.5") [label="ноль"]
+lamp2:w                  -> lamp3:n $wire(White,        "1.5") [label="фаза постоянная"]
+
+
+}
+@enddot

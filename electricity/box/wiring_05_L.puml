@@ -1,0 +1,22 @@
+@startdot
+!$label="Разводка фазы"
+
+!define RANKSEP 1
+
+!define SHOW_BRIDGES
+!define OVERVIEW
+!define SHOW_WIRING_OUTLETS
+!define SHOW_WIRING_LIGHTS
+!define SHOW_HOT
+!define SHOW_INGRESS
+
+!define RAIL_UP
+!define RAIL_LO
+!define RAIL_MI
+
+!define SHOW_TERMINALS_WALL_OUTLETS
+!define SHOW_TERMINALS_LIGHTS
+!define SHOW_TERMINALS_BUTTONS
+
+!include _wiring.iuml
+@enddot

@@ -1,0 +1,16 @@
+@startuml
+!procedure $cable_3wire($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="#f0f0f0"   border="1">$title</td></tr>
+      <tr><td align="text" port="i_blue"  bgcolor="#ffffff" border="1">синий           <br align="left"/></td></tr>
+      <tr><td align="text" port="i_brown" bgcolor="#ffffff" border="1">коричневый      <br align="left"/></td></tr>
+      <tr><td align="text" port="i_yg"    bgcolor="#ffffff" border="1">жёлто-зеленый   <br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+@enduml

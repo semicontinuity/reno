@@ -1,0 +1,17 @@
+@startuml
+!procedure $button_with_b_led($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="btn_common" border="1">button common<br align="left"/></td></tr>
+      <tr><td align="text" port="btn_signal" border="1">button signal<br align="left"/></td></tr>
+      <tr><td align="text" port="led_common" border="1">LED common<br align="left" /></td></tr>
+      <tr><td align="text" port="led_b"      border="1">LED blue<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+@enduml

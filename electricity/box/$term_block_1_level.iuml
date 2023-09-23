@@ -1,0 +1,24 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_1_level($number, $id, $title, $bgcolor="#e0e0e0", $point_size="", $default_port_suffix="")
+'!$i = $id + "__i"
+'!$o = $id + "__o"
+
+'<tr port="$id">
+'    <td align="text" bgcolor="$bgcolor" port="$i" border="1"><b>$number</b></td>
+'    <td align="text" bgcolor="$bgcolor" port="$o" border="1" width="100%"><font point-size="$point_size" > $title</font><br align="left"/></td>
+'</tr>
+!$port = $id + $default_port_suffix
+      <tr><td colspan="2" align="text" port="$port" border="1" bgcolor="$bgcolor"><b><font color="darkblue">$number</font>| </b><font point-size="$point_size" > $title</font> <br align="left"/></td></tr>
+
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_1_level_6mm($number, $id, $title, $bgcolor="wheat")
+$term_block_1_level($number, $id, $title, $bgcolor=$bgcolor)
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $term_block_1_level_8mm($number, $id, $title, $bgcolor="wheat")
+$term_block_1_level($number, $id, $title, $bgcolor=$bgcolor, $point_size="16")
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

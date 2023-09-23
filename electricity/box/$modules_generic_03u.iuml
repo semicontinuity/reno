@@ -1,0 +1,76 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $module_03u($number, $id, $title, $bgcolor="white", $bar_top_1_color="white", $bar_top_2_color="white", $bar_top_1_pos="both", $bar_top_2_pos="both")
+
+!$bar_top_1_color_1 = "white"
+!$bar_top_1_color_2 = "white"
+!$bar_top_1_color_3 = "white"
+
+!if $bar_top_1_pos == "both"
+!$bar_top_1_color_1 = $bar_top_1_color
+!$bar_top_1_color_2 = $bar_top_1_color
+!$bar_top_1_color_3 = $bar_top_1_color
+!endif
+
+!if $bar_top_1_pos == "left"
+!$bar_top_1_color_1 = $bar_top_1_color
+!$bar_top_1_color_2 = $bar_top_1_color
+!endif
+
+!if $bar_top_1_pos == "right"
+!$bar_top_1_color_2 = $bar_top_1_color
+!$bar_top_1_color_3 = $bar_top_1_color
+!endif
+
+
+!$bar_top_2_color_1 = "white"
+!$bar_top_2_color_2 = "white"
+!$bar_top_2_color_3 = "white"
+
+!if $bar_top_2_pos == "both"
+!$bar_top_2_color_1 = $bar_top_2_color
+!$bar_top_2_color_2 = $bar_top_2_color
+!$bar_top_2_color_3 = $bar_top_2_color
+!endif
+
+!if $bar_top_2_pos == "left"
+!$bar_top_2_color_1 = $bar_top_2_color
+!$bar_top_2_color_2 = $bar_top_2_color
+!endif
+
+!if $bar_top_2_pos == "right"
+!$bar_top_2_color_2 = $bar_top_2_color
+!$bar_top_2_color_3 = $bar_top_2_color
+!endif
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_1_color_1"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2_color_1"></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td bgcolor="$bgcolor" port="$id"> $title</td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_1_color_2"><font point-size="$BUSBAR_SIZE"> </font></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2_color_1"><font point-size="$BUSBAR_SIZE"> </font></td>
+      </tr>
+
+      <tr>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="gray"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_1_color_3"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="$bar_top_2_color_3"></td>
+      </tr>
+!endprocedure
+@enduml

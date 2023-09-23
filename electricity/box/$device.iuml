@@ -1,0 +1,76 @@
+@startuml
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $device_1x($title, $port, $port_label)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text"               border="1" bgcolor="wheat">$title</td></tr>
+      <tr><td align="text" port="common" border="1"                >общий<br align="left"/></td></tr>
+      <tr><td align="text" port="$port"  border="1"                >$port_label<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $device_1o($title)
+'$device_1x($title="$title", "output", "выход")
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="common" border="1">общий<br align="left"/></td></tr>
+      <tr><td align="text" port="output"  border="1">выход<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $device_2o($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="common" border="1">общий<br align="left"/></td></tr>
+      <tr><td align="text" port="output_1"  border="1">выход 1<br align="left"/></td></tr>
+      <tr><td align="text" port="output_2"  border="1">выход 2<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $device_1i($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="common" border="1">общий<br align="left"/></td></tr>
+      <tr><td align="text" port="input"  border="1">вход<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+!procedure $device_l_n_pe($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="l" border="1">L<br align="left"/></td></tr>
+      <tr><td align="text" port="n" border="1">N<br align="left"/></td></tr>
+      <tr><td align="text" port="pe" border="1">PE<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+@enduml

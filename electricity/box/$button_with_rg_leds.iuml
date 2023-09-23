@@ -1,0 +1,18 @@
+@startuml
+!procedure $button_with_rg_leds($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="btn_common" border="1">button common<br align="left"/></td></tr>
+      <tr><td align="text" port="btn_signal" border="1">button signal<br align="left"/></td></tr>
+      <tr><td align="text" port="led_common" border="1">LED common<br align="left"/></td></tr>
+      <tr><td align="text" port="led_r"      border="1">LED red<br align="left"/></td></tr>
+      <tr><td align="text" port="led_g"      border="1">LED green<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+@enduml

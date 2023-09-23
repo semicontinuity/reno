@@ -1,0 +1,50 @@
+@startdot
+!include $block.iuml
+!include $term_block_3_level.iuml
+!include $modules.iuml
+!include $modules_generic_1u.iuml
+!include $cable_3wire.iuml
+!include $cable_4wire.iuml
+!include $wire.iuml
+
+
+digraph box {
+
+label = "Схема линии освещения и вентиляции туалета\nШлейф, соединения при помощи клемм Wago"
+
+fontname = "Helvetica"
+rankdir  = "LR"
+
+!ifndef RANKSEP
+!define RANKSEP 2
+!endif
+
+graph [ ranksep=RANKSEP; ];
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+c_room_l_light $cable_4wire("кабель<br/>ВВГнг(LS)a 4x1.5мм2 <br/>освещение + вентилятор туалета")
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' лампа, вентилятор
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+lamp1 [label="лампа"]
+lamp2 [label="вентилятор"]
+
+c_room_l_light:i_yg:e    -> lamp1:w $wire(YellowGreen,  "1.5")  [label="защитное заземление"]
+c_room_l_light:i_blue:e  -> lamp1:n $wire(Blue,         "1.5")  [label="ноль"]
+c_room_l_light:i_white:e -> lamp1:s $wire(White,         "1.5") [label="фаза коммутируемая"]
+
+lamp1:w                  -> lamp2:e $wire(YellowGreen,  "1.5")  [label="защитное заземление"]
+lamp1:n                  -> lamp2:w $wire(Blue,         "1.5")  [label="ноль"]
+lamp1:s                  -> lamp2:s $wire(White,         "1.5") [label="фаза коммутируемая"]
+c_room_l_light:i_red:e   -> lamp2:n $wire(Red,           "1.5") [label="фаза постоянная"]
+
+'c_room_l_light:i_red:e   -> lamp1:n $wire(Red,          "1.5")
+
+'c_room_l_light:i_blue:e  -> lamp2:n $wire(Blue,  "1.5")
+'c_room_l_light:i_yg:e    -> case    $wire(YellowGreen,  "1.5")
+
+
+}
+@enddot

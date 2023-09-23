@@ -1,0 +1,31 @@
+@startuml
+!include $block.iuml
+!include $modules.iuml
+
+!define RAIL_LO
+
+subgraph cluster_r7 {
+  style=invis
+
+  r7
+  $block_start()
+
+    $module_1u_cb("Q71", cb_cooktop,         "(резерв)",             $model="",                 $bar="l", $bar_pos="right")
+    $module_1u_cb("Q72", cb_permanent2,      "(резерв слаботочный)",        $model="ABB S201 (B) 10A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q73", cb_permanent,       "холодильник + слаб.?",          $model="ABB S201 (B) 10A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q74", cb_oven,            "духовка",              $model="ABB S201 (B) 25A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q75", cb_heater,          "водонагреватель",      $model="ABB S201 (B) 32A ??", $bar="l", $bar_pos="both")
+
+    $module_1u_cb("Q76", cb_washer,          "посудомойка",          $model="ABB S201 (B) 16A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q77", cb_air,             "кондиционер",          $model="ABB S201 (B) 16A", $bar="l", $bar_pos="both")
+
+    $module_1u_cb("Q61", cb_wo_kitchen,      "роз кухня",            $model="ABB S201 (B) 16A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q62", cb_wo_room1,        "роз комната 1",        $model="ABB S201 (B) 16A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q63", cb_wo_room2,        "роз комната 2",        $model="ABB S201 (B) 16A", $bar="l", $bar_pos="both")
+    $module_1u_cb("Q64", cb_wo_room3,        "роз комната 3",        $model="ABB S201 (B) 16A", $bar="l", $bar_pos="left")
+    $module_1u_cb("Q81", cb_wo_bathroom,     "роз ванная",           $model="ABB S201 (B) 16A")
+
+  $block_end()
+}
+
+@enduml
