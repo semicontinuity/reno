@@ -1,0 +1,182 @@
+@startmindmap
+
+<style>
+legend {
+  BackgroundColor #FFEFE0
+}
+node {
+  FontStyle Bold
+  FontSize 18
+  FontName Courier
+  Padding 4
+  Margin 4
+  RoundCorner 10
+}
+
+'Neutral
+.N {
+  BackgroundColor #lightblue
+}
+
+'Switch disconnector
+.SD {
+  BackgroundColor #lightsalmon
+}
+'Voltage relay
+.VR {
+  BackgroundColor #LightPink
+}
+'Installation contactors
+.IC {
+  BackgroundColor #NavajoWhite
+}
+'Latching relays
+.LR {
+  BackgroundColor #NavajoWhite
+}
+.RCCB {
+  BackgroundColor #thistle
+}
+.CB {
+  BackgroundColor lightgreen
+}
+'Terminal
+.T {
+  BackgroundColor #lightyellow
+}
+'Terminal
+.T1 {
+  BackgroundColor #khaki
+}
+.T_IN {
+  BackgroundColor #Wheat
+}
+'Wall outlet block
+.W {
+  BackgroundColor #gainsboro
+}
+'Wall outlet
+.W {
+  BackgroundColor #white
+}
+'Light group
+.L {
+}
+'Consumer
+.C {
+  BackgroundColor #lightgray
+}
+.PLCIN {
+  BackgroundColor #white
+}
+</style>
+
+* QW1 выключатель нагрузки<<SD>>
+  * KU1 реле напряжения<<VR>>
+
+    * Q7 30mA общий      <<RCCB>>
+      * свет    <<>>
+        * Q7 N                        <<N>>
+          * X01 свет балкон     <<T1>>
+            * 3x1.5
+              *_ светильники            <<L>>
+          * X03 свет кухня      <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+          * X05 свет коридор 1  <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+          * X08 свет коридор 2  <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+          * X11 свет комната 1  <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+          * X13 свет комната 2  <<T1>>
+            * 4x1.5
+              *_ светильники            <<W>>
+          * X15 свет комната 3  <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+          * X17 свет туалет     <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+              *_ вентилятор             <<L>>
+          * X19 свет ванная     <<T1>>
+            * 4x1.5
+              *_ светильники            <<L>>
+              *_ вентилятор             <<L>>
+              *_ подсветка зеркала      <<L>>
+
+        * Q91 6A(B) балкон            <<CB>>
+          * X02 выкл балкон     <<T1>>
+            * 3x1.5
+
+        * Q92 6A(B) кухня коридор     <<CB>>
+          * X04 выкл кухня      <<T1>>
+            * 3x1.5
+              * рамка 1 м.
+                * выкл. 2 кл.
+          * X06 выкл коридор 1.1<<T1>>
+            * 3x1.5
+              * рамка 1 м.
+                * перекл. 2 кл.
+          * X07 выкл коридор 1.2<<T1>>
+            * 3x1.5
+          * X09 выкл коридор 2.1<<T1>>
+            * 3x1.5
+              * рамка 1 м.
+                * перекл. 2 кл.
+          * X10 выкл коридор 2.2<<T1>>
+            * 3x1.5
+
+        * Q93 6A(B) комната 1         <<CB>>
+          * X12 выкл комната 1  <<T1>>
+            * 3x1.5
+
+        * Q94 6A(B) комната 2         <<CB>>
+          * X14 выкл комната 2  <<T1>>
+            * 3x1.5
+
+        * Q95 6A(B) комната 3         <<CB>>
+          * X16 выкл комната 3  <<T1>>
+            * 3x1.5
+
+        * Q96 6A(B) ванн туалет       <<CB>>
+          * X18 выкл туалет     <<T1>>
+            * 3x1.5
+              * рамка 1 м.
+                * выкл 1 кл.
+          * X20 выкл ванная     <<T1>>
+            * 3x1.5
+              * рамка 1 м.
+                * выкл 1 кл.
+
+      * розетки <<>>
+
+        * Q61 16A(B) роз кухня        <<CB>>
+          * 3x2.5
+            * здесь можно перечислять структуру потребителей на линии, например, в порядке следования шлейфа
+            * блок розеток 1 (2 розетки)<<WB>>
+            * блок розеток 2 (2 розетки)<<WB>>
+
+        * Q62 16A(B) роз .....        <<CB>>
+          * 3x2.5
+            * document me!
+
+      * техника <<>>
+
+        * Q73 10A(B) ...              <<CB>>
+          * 3x2.5
+        * Q74 25A(B) ...              <<CB>>
+          * 3x4.0
+
+    * Q8 10mA роз ванная <<RCCB>>
+      * ....... <<>>
+        * Q81 16A(B) роз ванная       <<CB>>
+          * 3x2.5
+            * блок розеток 1 (2 розетки)<<WB>>
+              *_ роз. стиралка?
+              *_ роз. фен?
+
+@endmindmap
