@@ -10,10 +10,10 @@ subgraph cluster_r9 {
   r9
   $block_start()
 
-    $module_2u_rccb("Q7", rccb_common,        "общий",                $model="ABB F202 40A 30mA (A)",  $bar_l_pos="right", $bar_n_pos="right")
-    $module_2u_rccb("Q8", rccb_wo_bathroom,   "роз ванная",           $model="ABB F202 16A 10mA (A)",  $bar_l_pos="left", $bar_n_pos="left")
+    $module_2u_rccb("Q7", rccb_common,       "общий",                 $model="ABB F202 40A 30mA (A)",  $bar_l_pos="right", $bar_n_pos="right")
+    $module_2u_rccb("Q8", rccb_wo_bathroom,  "роз ванная",            $model="ABB F202 16A 10mA (A)",  $bar_l_pos="left",  $bar_n_pos="left")
 
-    $module_2u_rccb("Q9", rccb_wo_light,      "(резерв свет)",        $model="")
+    $module_2u_rccb("Q9", rccb_wo_light,     "(резерв свет)",         $model="")
 
     $module_1u_cb("Q91",  cb_l_balcony,      "свет балкон",           $model="ABB S201 (B) 6A", $bar="l", $bar_pos="right")
     $module_1u_cb("Q92",  cb_l_kitchen,      "свет кухня коридор",    $model="ABB S201 (B) 6A", $bar="l", $bar_pos="both")
