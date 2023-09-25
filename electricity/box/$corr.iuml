@@ -4,6 +4,8 @@
     bgcolor="#F0F0F0"
 !if $size != 0
     label="Гофра $size мм"
+!else
+    label=""
 !endif
 !endprocedure
 @enduml
