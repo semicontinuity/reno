@@ -19,6 +19,9 @@ subgraph cluster_r1 {
     $module_2u_voltage_relay(      "KU1", vr, "реле напряжения")
 !endif
 
+    $module_1u_1io_new("", res1_3, "резерв")
+    $module_1u_1io_new("", res1_4, "резерв")
+
     $term_block_2_level_l1_l2("X01", l_balcony,     "свет балкон")
     $term_block_2_level_l1_l2("X02", s_balcony,     "выкл балкон")
 
@@ -46,8 +49,6 @@ subgraph cluster_r1 {
 
     $term_block_2_level_l1_l2("X19", l_bathroom,    "свет ванная")
     $term_block_2_level_l1_l2("X20", s_bathroom,    "выкл ванная")
-
-    $module_1u_1io_new("", res1_3, " ")
 
   $block_end()
 }
