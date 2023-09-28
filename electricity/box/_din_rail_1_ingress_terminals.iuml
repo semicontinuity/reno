@@ -16,7 +16,7 @@ subgraph cluster_r1 {
 
 !ifdef RAIL_UP && SHOW_INGRESS
     $module_2u_switch_disconnector("QW1", sd, "щит")
-    $module_2u_voltage_relay(      "KU1", vr, "реле напряжения")
+    $module_2u_voltage_relay(      "KV1", vr, "реле напряжения")
 !endif
 
     $module_1u_1io_new("", res1_3, "резерв")
