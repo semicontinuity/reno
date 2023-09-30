@@ -14,6 +14,7 @@
 #### Вводы в верхней части щита
 
 <img src="https://cs-cs.net/wp-uploads/2020/01/UK6xx07-CabFlanec.jpg" alt="">
+<img src="box-cable.png" alt="">
 
 1. ввод - питающий кабель из этажного щита
 2. свет кухня
