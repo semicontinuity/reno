@@ -10,17 +10,17 @@
 
 ' Рейка с автоматами техники + розеток
 !ifdef RAIL_LO
-!include _din_rail_7_circuit_breakers.iuml
+!include _din_rail_lo.iuml
 !endif
 
 ' Рейка с УЗО + автоматы освещения
 !ifdef RAIL_MI
-!include _din_rail_9_rccb.iuml
+!include _din_rail_mi.iuml
 !endif
 
 ' Рейка с клеммами + ввод
 !ifdef RAIL_UP
-!include _din_rail_1_ingress_terminals.iuml
+!include _din_rail_hi.iuml
 !endif
 
 
