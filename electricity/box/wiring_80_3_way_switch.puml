@@ -16,9 +16,11 @@
 
 digraph box {
 
-fontname = "Helvetica"
-rankdir  = "LR"
 label="Освещение в коридоре\n2 проходных выключателя "
+labelloc = "t"
+fontname = "Helvetica"
+fontsize = 28
+rankdir  = "LR"
 
 !ifndef RANKSEP
 !define RANKSEP 2

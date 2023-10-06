@@ -1,7 +1,11 @@
 @startuml
 !procedure $corr($size=16)
-    style=filled
-    bgcolor="#F0F0F0"
+    style    = rounded
+    color    = lightgray
+    bgcolor  = "#F0F0F0"
+    label    = "Гофра $size мм"
+    fontsize = 14
+
 !if $size != 0
     label="Гофра $size мм"
 !else

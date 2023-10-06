@@ -27,7 +27,9 @@
 digraph box {
 
 label    = "$label"
+labelloc = "t"
 fontname = "Helvetica"
+fontsize = 28
 rankdir  = "LR"
 
 !ifndef RANKSEP

@@ -13,8 +13,10 @@
 
 digraph box {
 
-label="освещение туалета"
+label    = "Освещение туалета"
+labelloc = "t"
 fontname = "Helvetica"
+fontsize = 28
 rankdir  = "LR"
 
 !ifndef RANKSEP
@@ -52,6 +54,8 @@ subgraph cluster_cc {
   color=lightgray
 '  margin=40
   label="гильзы ГМЛ"
+  fontsize = 14
+
 
   CC_L   [shape="cylinder" label="L" ]
   CC_N   [shape="cylinder" label="N" ]

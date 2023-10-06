@@ -15,8 +15,10 @@
 
 digraph box {
 
-label="освещение ванной"
+label="Освещение ванной"
+labelloc = "t"
 fontname = "Helvetica"
+fontsize = 28
 rankdir  = "LR"
 
 !ifndef RANKSEP
@@ -54,10 +56,10 @@ $block_end()
 ' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
 subgraph cluster_cc {
-  style=rounded
-  color=lightgray
-'  margin=40
-  label="гильзы ГМЛ"
+  style    = rounded
+  color    = lightgray
+  label    = "гильзы ГМЛ"
+  fontsize = 14
 
   CC_L   [shape="cylinder" label="L" ]
   CC_N   [shape="cylinder" label="N" ]

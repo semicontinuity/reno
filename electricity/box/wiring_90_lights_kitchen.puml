@@ -15,8 +15,10 @@
 
 digraph box {
 
-label="расключение типовой\nсдвоенной группы света\nв щите на 2-уровневых клеммах"
+label="Расключение типовой\nсдвоенной группы света\nв щите на 2-уровневых клеммах"
+labelloc = "t"
 fontname = "Helvetica"
+fontsize = 28
 rankdir  = "LR"
 
 !ifndef RANKSEP
