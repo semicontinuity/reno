@@ -1,0 +1,4 @@
+@startuml
+!include ../$lib/$term_block_2_level.iuml
+$term_block_2_level_l1_l2("X05", s_corr_1_1,    "выкл коридор 1.1")
+@enduml

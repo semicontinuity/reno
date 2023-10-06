@@ -28,12 +28,12 @@ subgraph cluster_r_hi {
    !include terminals/l_kitchen.iuml
    !include terminals/s_kitchen.iuml
 
-    $term_block_2_level_l1_l2("X05", s_corr_1_1,    "выкл коридор 1.1")
-    $term_block_2_level_l1_l2("X06", s_corr_1_2,    "выкл коридор 1.2")
-    $term_block_2_level_l1_l2("X07", l_corr_1,      "свет коридор 1")
-    $term_block_2_level_l1_l2("X08", l_corr_2,      "свет коридор 2")
-    $term_block_2_level_l1_l2("X09", s_corr_2_1,    "выкл коридор 2.1")
-    $term_block_2_level_l1_l2("X10", s_corr_2_2,    "выкл коридор 2.2")
+   !include terminals/s_corr_1_1.iuml
+   !include terminals/s_corr_1_2.iuml
+   !include terminals/l_corr_1.iuml
+   !include terminals/l_corr_2.iuml
+   !include terminals/s_corr_2_1.iuml
+   !include terminals/s_corr_2_2.iuml
 
     $term_block_2_level_l1_l2("X11", l_room1,       "свет комн 1")
     $term_block_2_level_l1_l2("X12", s_room1,       "выкл комн 1")
