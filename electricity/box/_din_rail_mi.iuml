@@ -10,7 +10,7 @@ subgraph cluster_r9 {
   r9
   $block_start()
 
-    $module_2u_rccb("Q7", rccb_common,       "общий",                 $model="ABB F202 40A 30mA (A)",  $bar_l_pos="right", $bar_n_pos="right")
+    !include rccb/rccb_common.iuml
     $module_2u_rccb("Q8", rccb_wo_bathroom,  "роз ванная",            $model="ABB F202 16A 10mA (A)",  $bar_l_pos="left",  $bar_n_pos="left")
 
     $module_2u_rccb("Q9", rccb_wo_light,     "(резерв свет)",         $model="")
@@ -20,7 +20,7 @@ subgraph cluster_r9 {
     $module_1u_cb("Q93",  cb_l_room1,        "свет комната 1",        $model="ABB S201 (B) 6A", $bar="l", $bar_pos="both")
     $module_1u_cb("Q94",  cb_l_room2,        "свет комната 2",        $model="ABB S201 (B) 6A", $bar="l", $bar_pos="both")
     $module_1u_cb("Q95",  cb_l_room3,        "свет комната 3",        $model="ABB S201 (B) 6A", $bar="l", $bar_pos="both")
-    $module_1u_cb("Q96",  cb_l_bathroom,     "свет ванная туалет",    $model="ABB S201 (B) 6A", $bar="l", $bar_pos="left")
+    !include circuit_breakers/cb_l_bathroom.iuml
 
   $block_end()
   }

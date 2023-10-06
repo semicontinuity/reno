@@ -1,0 +1,4 @@
+@startuml
+!include ../$lib/$modules.iuml
+$module_2u_rccb("Q7", rccb_common,       "общий",                 $model="ABB F202 40A 30mA (A)",  $bar_l_pos="right", $bar_n_pos="right")
+@enduml

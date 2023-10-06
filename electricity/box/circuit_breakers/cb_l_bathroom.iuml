@@ -1,0 +1,4 @@
+@startuml
+!include ../$lib/$modules.iuml
+$module_1u_cb("Q96",  cb_l_bathroom,     "свет ванная туалет",    $model="ABB S201 (B) 6A", $bar="l", $bar_pos="left")
+@enduml
