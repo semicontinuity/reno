@@ -44,11 +44,10 @@ subgraph cluster_r_hi {
     $term_block_2_level_l1_l2("X15", l_room3,       "свет комн 3")
     $term_block_2_level_l1_l2("X16", s_room3,       "выкл комн 3")
 
-    $term_block_2_level_l1_l2("X17", l_toilet,      "свет туалет")
-    $term_block_2_level_l1_l2("X18", s_toilet,      "выкл туалет")
-
-    $term_block_2_level_l1_l2("X19", l_bathroom,    "свет ванная")
-    $term_block_2_level_l1_l2("X20", s_bathroom,    "выкл ванная")
+    !include terminals/l_toilet.iuml
+    !include terminals/s_toilet.iuml
+    !include terminals/l_bathroom.iuml
+    !include terminals/s_bathroom.iuml
 
   $block_end()
 }

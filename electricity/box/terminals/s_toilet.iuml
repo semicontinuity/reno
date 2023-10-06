@@ -1,0 +1,4 @@
+@startuml
+!include ../$lib/$modules.iuml
+$term_block_2_level_l1_l2("X18", s_toilet,      "выкл туалет")
+@enduml
