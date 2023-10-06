@@ -19,9 +19,9 @@
 ' SHOW_PATCHES
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '!define SHOW_BUSBARS
-!include $block.iuml
-!include $term_block_3_level.iuml
-!include $wire.iuml
+!include $lib/$block.iuml
+!include $lib/$term_block_3_level.iuml
+!include $lib/$wire.iuml
 
 
 digraph box {

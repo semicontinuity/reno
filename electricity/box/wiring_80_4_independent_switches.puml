@@ -6,12 +6,12 @@
 
 !define RAIL_UP
 
-!include $block.iuml
-!include $term_block_3_level.iuml
-!include $wire.iuml
-!include $corr.iuml
-!include $cable_3wire.iuml
-!include $cable_4wire.iuml
+!include $lib/$block.iuml
+!include $lib/$term_block_3_level.iuml
+!include $lib/$wire.iuml
+!include $lib/$corr.iuml
+!include $lib/$cable_3wire.iuml
+!include $lib/$cable_4wire.iuml
 
 
 digraph box {

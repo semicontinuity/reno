@@ -1,6 +1,6 @@
 @startuml
-!include $block.iuml
-!include $modules.iuml
+!include $lib/$block.iuml
+!include $lib/$modules.iuml
 
 subgraph cluster_r9 {
   style=invis

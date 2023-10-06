@@ -1,11 +1,11 @@
 @startdot
-!include $block.iuml
-!include $term_block_3_level.iuml
-!include $modules.iuml
-!include $modules_generic_1u.iuml
-!include $cable_3wire.iuml
-!include $cable_4wire.iuml
-!include $wire.iuml
+!include $lib/$block.iuml
+!include $lib/$term_block_3_level.iuml
+!include $lib/$modules.iuml
+!include $lib/$modules_generic_1u.iuml
+!include $lib/$cable_3wire.iuml
+!include $lib/$cable_4wire.iuml
+!include $lib/$wire.iuml
 
 
 digraph box {

@@ -1,10 +1,10 @@
 @startuml
-!include $block.iuml
-!include $modules.iuml
-!include $modules_terminals.iuml
+!include $lib/$block.iuml
+!include $lib/$modules.iuml
+!include $lib/$modules_terminals.iuml
 
-!include $term_block_2_level.iuml
-!include $term_block_3_level.iuml
+!include $lib/$term_block_2_level.iuml
+!include $lib/$term_block_3_level.iuml
 !define ABBR_BUT выкл
 
 subgraph cluster_r1 {
