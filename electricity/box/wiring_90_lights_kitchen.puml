@@ -25,7 +25,16 @@ rankdir  = "LR"
 
 graph [ ranksep=RANKSEP; ];
 
-!include _wiring_contents.iuml
+subgraph cluster_r_hi {
+  style=invis
+  label="Клеммники"
+
+  r_hi
+  $block_start()
+   !include terminals/l_kitchen.iuml
+   !include terminals/s_kitchen.iuml
+  $block_end()
+}
 
 ' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 

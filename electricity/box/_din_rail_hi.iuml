@@ -25,8 +25,8 @@ subgraph cluster_r_hi {
     $term_block_2_level_l1_l2("X01", l_balcony,     "свет балкон")
     $term_block_2_level_l1_l2("X02", s_balcony,     "выкл балкон")
 
-    $term_block_2_level_l1_l2("X03", l_kitchen,     "свет кухня")
-    $term_block_2_level_l1_l2("X04", s_kitchen,     "выкл кухня")
+   !include terminals/l_kitchen.iuml
+   !include terminals/s_kitchen.iuml
 
     $term_block_2_level_l1_l2("X05", s_corr_1_1,    "выкл коридор 1.1")
     $term_block_2_level_l1_l2("X06", s_corr_1_2,    "выкл коридор 1.2")
