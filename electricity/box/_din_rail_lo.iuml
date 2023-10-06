@@ -4,10 +4,10 @@
 
 !define RAIL_LO
 
-subgraph cluster_r7 {
+subgraph cluster_r_lo {
   style=invis
 
-  r7
+  r_lo
   $block_start()
 
     $module_1u_cb("Q71", cb_permanent,       "холодильник + слаб.?", $model="ABB S201 (B) 10A", $bar="l", $bar_pos="right")

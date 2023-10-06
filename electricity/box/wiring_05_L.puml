@@ -10,9 +10,9 @@
 !define SHOW_HOT
 !define SHOW_INGRESS
 
-!define RAIL_UP
-!define RAIL_LO
+!define RAIL_HI
 !define RAIL_MI
+!define RAIL_LO
 
 !define SHOW_TERMINALS_WALL_OUTLETS
 !define SHOW_TERMINALS_LIGHTS

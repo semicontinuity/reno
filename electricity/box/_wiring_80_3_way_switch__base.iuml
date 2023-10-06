@@ -33,20 +33,20 @@ c_corr_e_l       $cable_4wire_power_alt("коридор свет 2<br/>1")
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' Подключение кабелей 1 группы света к клеммам
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-r1:s_corr_1_1__top:e -> c_corr_b_1_s:i_blue     $wire(Blue,         "1.5")
-r1:s_corr_1_1__bot:e -> c_corr_b_1_s:i_yg       $wire(YellowGreen,  "1.5")
+r_hi:s_corr_1_1__top:e -> c_corr_b_1_s:i_blue     $wire(Blue,         "1.5")
+r_hi:s_corr_1_1__bot:e -> c_corr_b_1_s:i_yg       $wire(YellowGreen,  "1.5")
 
-r1:s_corr_1_2__top:e -> c_corr_e_1_s:i_blue     $wire(Blue,         "1.5")
-r1:s_corr_1_2__bot:e -> c_corr_e_1_s:i_yg       $wire(YellowGreen,  "1.5")
+r_hi:s_corr_1_2__top:e -> c_corr_e_1_s:i_blue     $wire(Blue,         "1.5")
+r_hi:s_corr_1_2__bot:e -> c_corr_e_1_s:i_yg       $wire(YellowGreen,  "1.5")
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' Подключение кабелей 2 группы света к клеммам
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-r1:s_corr_2_1__top:e -> c_corr_b_2_s:i_blue:w   $wire(Blue,         "1.5")
-r1:s_corr_2_1__bot:e -> c_corr_b_2_s:i_yg       $wire(YellowGreen,  "1.5")
+r_hi:s_corr_2_1__top:e -> c_corr_b_2_s:i_blue:w   $wire(Blue,         "1.5")
+r_hi:s_corr_2_1__bot:e -> c_corr_b_2_s:i_yg       $wire(YellowGreen,  "1.5")
 
-r1:s_corr_2_2__top:e -> c_corr_e_2_s:i_blue:w   $wire(Blue,         "1.5")
-r1:s_corr_2_2__bot:e -> c_corr_e_2_s:i_yg       $wire(YellowGreen,  "1.5")
+r_hi:s_corr_2_2__top:e -> c_corr_e_2_s:i_blue:w   $wire(Blue,         "1.5")
+r_hi:s_corr_2_2__bot:e -> c_corr_e_2_s:i_yg       $wire(YellowGreen,  "1.5")
 
 ' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -54,11 +54,11 @@ r1:s_corr_2_2__bot:e -> c_corr_e_2_s:i_yg       $wire(YellowGreen,  "1.5")
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' Подсоединение проводов до ламп к клеммам
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-r1:l_corr_1__top:e -> c_corr_b_l:l2:w          $wire(Red,           "1.5")
-r1:l_corr_1__bot:e -> c_corr_b_l:l1:w          $wire(White,         "1.5")
+r_hi:l_corr_1__top:e -> c_corr_b_l:l2:w          $wire(Red,           "1.5")
+r_hi:l_corr_1__bot:e -> c_corr_b_l:l1:w          $wire(White,         "1.5")
 
-r1:l_corr_2__top:e -> c_corr_e_l:l2:w          $wire(Red,           "1.5")
-r1:l_corr_2__bot:e -> c_corr_e_l:l1:w          $wire(White,         "1.5")
+r_hi:l_corr_2__top:e -> c_corr_e_l:l2:w          $wire(Red,           "1.5")
+r_hi:l_corr_2__bot:e -> c_corr_e_l:l1:w          $wire(White,         "1.5")
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' Подсоединение проводов от ламп к земле

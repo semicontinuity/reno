@@ -7,14 +7,14 @@
 !include $lib/$term_block_3_level.iuml
 !define ABBR_BUT выкл
 
-subgraph cluster_r1 {
+subgraph cluster_r_hi {
   style=invis
   label="Клеммники"
 
-  r1
+  r_hi
   $block_start()
 
-!ifdef RAIL_UP && SHOW_INGRESS
+!ifdef RAIL_HI && SHOW_INGRESS
     $module_2u_switch_disconnector("QW1", sd, "щит")
     $module_2u_voltage_relay(      "KV1", vr, "реле напряжения")
 !endif

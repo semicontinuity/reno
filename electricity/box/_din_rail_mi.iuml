@@ -2,12 +2,12 @@
 !include $lib/$block.iuml
 !include $lib/$modules.iuml
 
-subgraph cluster_r9 {
+subgraph cluster_r_mi {
   style=invis
   {
   rank=same;
 
-  r9
+  r_mi
   $block_start()
 
     !include rccb/rccb_common.iuml
