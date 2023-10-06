@@ -1,5 +1,26 @@
 @startuml
-!include _wiring_contents.iuml
+
+!include $lib/$block.iuml
+!include $lib/$term_block_2_level.iuml
+
+' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+subgraph cluster_r_hi {
+  style=invis
+  label="Клеммники"
+
+  r_hi
+  $block_start()
+
+   !include terminals/s_corr_1_1.iuml
+   !include terminals/s_corr_1_2.iuml
+   !include terminals/l_corr_1.iuml
+   !include terminals/l_corr_2.iuml
+   !include terminals/s_corr_2_1.iuml
+   !include terminals/s_corr_2_2.iuml
+
+  $block_end()
+}
 
 ' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 

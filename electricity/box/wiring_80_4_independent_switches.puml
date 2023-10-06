@@ -4,8 +4,6 @@
 
 !define EXPANDED
 
-!define RAIL_HI
-
 !include $lib/$block.iuml
 !include $lib/$term_block_3_level.iuml
 !include $lib/$wire.iuml
@@ -34,10 +32,8 @@ graph [ ranksep=RANKSEP; ];
 ' Подвод фазы с автомата
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 PHASE [label="АВ кухня коридор"]
-'PHASE -> c_corr_b_1_s:i_brown                  $wire(Brown,         "1.5")
 PHASE -> c_corr_b_2_s:i_brown                  $wire(Brown,         "1.5")
 PHASE -> c_corr_e_1_s:i_brown                  $wire(Brown,         "1.5")
-'PHASE -> c_corr_e_2_s:i_brown                  $wire(Brown,         "1.5")
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' Шинка для неиспользованных проводов
@@ -71,7 +67,6 @@ c_corr_b_2_s:i_brown:e -> c_corr_b_2_s:i_yg:e   [label="Клавиша выкл�
 
 c_corr_e_1_s:i_brown:e -> c_corr_e_1_s:i_blue:e [label="Клавиша выключателя"]
 c_corr_e_1_s:i_brown:e -> c_corr_e_1_s:i_yg:e   [label="Клавиша выключателя"]
-'c_corr_e_2_s:i_brown:e -> c_corr_e_2_s:i_blue:e [label="Клавиша выключателя"]
 
 }
 @enddot
