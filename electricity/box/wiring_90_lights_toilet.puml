@@ -69,15 +69,14 @@ subgraph cluster_r_hi {
 subgraph cluster_cc {
   style=rounded
   color=lightgray
-'  margin=40
-  label="гильзы ГМЛ"
+  label="распред. коробка\nгильзы ГМЛ"
   fontsize = 14
 
 
-  CC_L   [shape="cylinder" label="L" ]
+  CC_L   [shape="cylinder" label="L_CONST" ]
   CC_N   [shape="cylinder" label="N" ]
   CC_PE  [shape="cylinder" label="PE"]
-  CC_L1  [shape="cylinder" label="L1"]
+  CC_L1  [shape="cylinder" label="L_LAMP"]
 }
 
 
