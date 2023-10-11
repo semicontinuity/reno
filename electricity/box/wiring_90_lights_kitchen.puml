@@ -52,6 +52,7 @@ subgraph cluster_r_hi {
 
   r_hi
   $block_start()
+   $block_label_2("Клеммники<br/>2-уровневые")
    !include terminals/l_kitchen.iuml
    !include terminals/s_kitchen.iuml
   $block_end()
