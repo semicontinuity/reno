@@ -1,9 +1,7 @@
 @startdot
-!define RANKSEP 2
 
+!define RANKSEP 1.3
 !define EXPANDED
-
-!define RAIL_HI
 
 !include $lib/$block.iuml
 !include $lib/$device.iuml
@@ -69,12 +67,12 @@ subgraph cluster_r_hi {
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ' Кабель освещения
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-c_bathroom_l   $cable_4wire_power_alt("кабель 4x1.5мм2<br/>свет<br/>ванная")
+c_bathroom_l   $cable_4wire_power_alt("кабель<br/>4x1.5мм2<br/>свет ванная")
 
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ' Кабель на выключатель
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-c_bathroom_s   $cable_3wire("кабель 3x1.5мм2<br/>выкл<br/>ванная")
+c_bathroom_s   $cable_3wire("кабель<br/>3x1.5мм2<br/>выкл ванная")
 
 
 
@@ -144,6 +142,7 @@ subgraph cluster_cc {
 ' Оконечные устройства
 '███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
+VALVE  $em_valve("Клапан")
 VENT  $ventilator()
 LAMP  $light_fixture_single("Лампы")
 MIRR  $light_fixture_single("Подсветка<br/>зеркала")
@@ -171,7 +170,7 @@ c_bathroom_l:pe:e -> CC_PE                       $wire(YellowGreen,   "1.5")
 ' Подсоединение потребителей к гильзам
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-CC_L1             -> LAMP:l                      $wire(White,         "1.5")
+CC_L1             -> LAMP:l                      $wire(Brown,         "1.5")
 CC_N              -> LAMP:n                      $wire(Blue,          "1.5")
 CC_PE             -> LAMP:pe                     $wire(YellowGreen,   "1.5")
 
@@ -180,9 +179,13 @@ CC_L              -> VENT:l                      $wire(Red,           "1.5")
 CC_N              -> VENT:n                      $wire(Blue,          "1.5")
 CC_PE             -> VENT:pe                     $wire(YellowGreen,   "1.5")
 
-CC_L              -> MIRR:l                      $wire(Red,           "1.5")
+CC_L              -> MIRR:l                      $wire(Brown,           "1.5")
 CC_N              -> MIRR:n                      $wire(Blue,          "1.5")
 CC_PE             -> MIRR:pe                     $wire(YellowGreen,   "1.5")
+
+CC_L1             -> VALVE:l                     $wire(Brown,         "1.5")
+CC_N              -> VALVE:n                     $wire(Blue,          "1.5")
+CC_PE             -> VALVE:pe                    $wire(YellowGreen,   "1.5")
 
 }
 @enddot

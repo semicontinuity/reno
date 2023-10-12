@@ -282,4 +282,27 @@
 
 ' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+!procedure $em_valve($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" border="1" bgcolor="plum1">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="pe" border="1">PE<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="n"  border="1">N<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="l" border="1">L<br align="left"/></td>
+      </tr>
+    </table>
+  >
+]
+!endprocedure
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 @enduml
