@@ -43,7 +43,9 @@
   >
 ]
 !endprocedure
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 !procedure $device_1i($title)
 [
   shape = none
@@ -57,7 +59,9 @@
   >
 ]
 !endprocedure
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 !procedure $device_l_n_pe($title)
 [
   shape = none
@@ -68,6 +72,26 @@
       <tr><td align="text" port="l" border="1">L<br align="left"/></td></tr>
       <tr><td align="text" port="n" border="1">N<br align="left"/></td></tr>
       <tr><td align="text" port="pe" border="1">PE<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $wall_outlet($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
+      <tr><td align="text" port="l1"  border="1">L<br align="left"/></td></tr>
+      <tr><td align="text" port="l2"  border="1">L<br align="left"/></td></tr>
+      <tr><td align="text" port="n1"  border="1">N<br align="left"/></td></tr>
+      <tr><td align="text" port="n2"  border="1">N<br align="left"/></td></tr>
+      <tr><td align="text" port="pe1" border="1">PE<br align="left"/></td></tr>
+      <tr><td align="text" port="pe2" border="1">PE<br align="left"/></td></tr>
     </table>
   >
 ]
@@ -91,7 +115,7 @@
 
 ' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-!procedure $switch_double($title)
+!procedure $switch_double($title, $key1="Клавиша 1", $key2="Клавиша 2")
 [
   shape = none
   fontname="Courier"
@@ -101,7 +125,7 @@
 
       <tr>
         <td colspan="1" rowspan="1" align="text" port="x1a"  border="1">X1A<br align="left"/></td>
-        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">клавиша 1</td>
+        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">$key1</td>
         <td colspan="1" rowspan="1" align="text" port="y1a"  border="1">Y1A<br align="left"/></td>
       </tr>
       <tr>
@@ -111,7 +135,7 @@
 
       <tr>
         <td colspan="1" rowspan="1" align="text" port="x2a"  border="1">X2A<br align="left"/></td>
-        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">клавиша 2</td>
+        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">$key2</td>
         <td colspan="1" rowspan="1" align="text" port="y2a"  border="1">Y2A<br align="left"/></td>
       </tr>
       <tr>
@@ -123,6 +147,29 @@
 ]
 !endprocedure
 
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $light_fixture_single($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" border="1" bgcolor="gold1">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="pe" border="1">PE<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="n"  border="1">N<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="l" border="1">L<br align="left"/></td>
+      </tr>
+    </table>
+  >
+]
+!endprocedure
 ' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 !procedure $light_fixture_double($title)
@@ -149,5 +196,90 @@
   >
 ]
 !endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $led_strip($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td align="text" border="1" bgcolor="lightgoldenrod1">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="pos" border="1">+<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="neg" border="1">-<br align="left"/></td>
+      </tr>
+
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $power_supply($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td colspan="2" align="text" border="1" bgcolor="mistyrose">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="pos"  border="1">+<br align="left"/></td>
+        <td colspan="1" rowspan="1" align="text" port="l"    border="1">L<br align="left"/></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="neg"  border="1">-<br align="left"/></td>
+        <td colspan="1" rowspan="1" align="text" port="n"    border="1">N<br align="left"/></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="shield"   border="1"> <br align="left"/></td>
+        <td colspan="1" rowspan="1" align="text" port="pe"       border="1">PE<br align="left"/></td>
+      </tr>
+
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $ventilator()
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td colspan="1" align="text" border="1" bgcolor="lightskyblue1">Вентилятор</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="l"    border="1">L<br align="left"/></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="n"    border="1">N<br align="left"/></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="pe"       border="1">PE<br align="left"/></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="light"       border="1">свет<br align="left"/></td>
+      </tr>
+
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @enduml

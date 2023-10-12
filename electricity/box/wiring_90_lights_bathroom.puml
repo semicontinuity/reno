@@ -6,6 +6,7 @@
 !define RAIL_HI
 
 !include $lib/$block.iuml
+!include $lib/$device.iuml
 !include $lib/$term_block_3_level.iuml
 !include $lib/$wire.iuml
 !include $lib/$corr.iuml
@@ -143,9 +144,9 @@ subgraph cluster_cc {
 ' Оконечные устройства
 '███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
-LAMP  [shape="box" label="Лампы"]
-VENT  [shape="box" label="Вентилятор"]
-MIRR  [shape="box" label="Подсветка зеркала"]
+VENT  $ventilator()
+LAMP  $light_fixture_single("Лампы")
+MIRR  $light_fixture_single("Подсветка<br/>зеркала")
 
 
 
@@ -170,18 +171,18 @@ c_bathroom_l:pe:e -> CC_PE                       $wire(YellowGreen,   "1.5")
 ' Подсоединение потребителей к гильзам
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-CC_L1             -> LAMP                        $wire(White,         "1.5")
-CC_N              -> LAMP                        $wire(Blue,          "1.5")
-CC_PE             -> LAMP                        $wire(YellowGreen,   "1.5")
+CC_L1             -> LAMP:l                      $wire(White,         "1.5")
+CC_N              -> LAMP:n                      $wire(Blue,          "1.5")
+CC_PE             -> LAMP:pe                     $wire(YellowGreen,   "1.5")
 
-CC_L1             -> VENT                        $wire(White,         "1.5")
-CC_L              -> VENT                        $wire(Red,           "1.5")
-CC_N              -> VENT                        $wire(Blue,          "1.5")
-CC_PE             -> VENT                        $wire(YellowGreen,   "1.5")
+CC_L1             -> VENT:light                  $wire(White,         "1.5")
+CC_L              -> VENT:l                      $wire(Red,           "1.5")
+CC_N              -> VENT:n                      $wire(Blue,          "1.5")
+CC_PE             -> VENT:pe                     $wire(YellowGreen,   "1.5")
 
-CC_L              -> MIRR                        $wire(Red,           "1.5")
-CC_N              -> MIRR                        $wire(Blue,          "1.5")
-CC_PE             -> MIRR                        $wire(YellowGreen,   "1.5")
+CC_L              -> MIRR:l                      $wire(Red,           "1.5")
+CC_N              -> MIRR:n                      $wire(Blue,          "1.5")
+CC_PE             -> MIRR:pe                     $wire(YellowGreen,   "1.5")
 
 }
 @enddot
