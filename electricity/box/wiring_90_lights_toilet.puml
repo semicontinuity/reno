@@ -51,6 +51,7 @@ subgraph cluster_r_hi {
 
   r_hi
   $block_start()
+    $block_label_2("Клеммники<br/>2-уровневые")
     !include terminals/l_toilet.iuml
     !include terminals/s_toilet.iuml
   $block_end()
