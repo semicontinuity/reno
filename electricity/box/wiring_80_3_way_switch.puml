@@ -70,7 +70,7 @@ PHASE -> c_corr_b_2_s:i_brown                      $wire(Brown,         "1.5")
 ' Подсоединение коммутируемой фазы к соединяющим клеммам
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 c_corr_e_1_s:i_brown:w -> r_hi:l_corr_1__top:w     $wire(Brown,         "1.5")
-c_corr_e_2_s:i_brown:w -> r_hi:l_corr_1__bot:w     $wire(Brown,         "1.5")
+c_corr_e_2_s:i_brown:w -> r_hi:l_corr_2__bot:w     $wire(Brown,         "1.5")
 
 
 

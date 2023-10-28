@@ -142,7 +142,6 @@ subgraph cluster_cc {
 ' Оконечные устройства
 '███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
-VALVE  $em_valve("Клапан")
 VENT  $ventilator()
 LAMP  $light_fixture_single("Лампы")
 MIRR  $light_fixture_single("Подсветка<br/>зеркала")
@@ -182,10 +181,6 @@ CC_PE             -> VENT:pe                     $wire(YellowGreen,   "1.5")
 CC_L              -> MIRR:l                      $wire(Brown,           "1.5")
 CC_N              -> MIRR:n                      $wire(Blue,          "1.5")
 CC_PE             -> MIRR:pe                     $wire(YellowGreen,   "1.5")
-
-CC_L1             -> VALVE:l                     $wire(Brown,         "1.5")
-CC_N              -> VALVE:n                     $wire(Blue,          "1.5")
-CC_PE             -> VALVE:pe                    $wire(YellowGreen,   "1.5")
 
 }
 @enddot
