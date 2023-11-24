@@ -1,5 +1,26 @@
 @startuml
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $terminal_block_1_1($title)
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td colspan="2" align="text" border="1" bgcolor="wheat">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="2" align="text" port="x1"  border="1">X1<br align="left"/></td>
+        <td colspan="1" rowspan="1" align="text" port="y1"  border="1">Y1<br align="left"/></td>
+      </tr>
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 !procedure $device_1x($title, $port, $port_label)
 [
   shape = none
@@ -108,6 +129,52 @@
       <tr><td align="text" bgcolor="wheat"   border="1">$title</td></tr>
       <tr><td align="text" port="x1"  border="1">X1<br align="left"/></td></tr>
       <tr><td align="text" port="x2"  border="1">X2<br align="left"/></td></tr>
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $switch_spdt($title, $key1="Клавиша 1")
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td colspan="3" align="text" border="1" bgcolor="lightgreen">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="2" align="text" port="x1"   border="1">X1<br align="left"/></td>
+        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">$key1</td>
+        <td colspan="1" rowspan="1" align="text" port="y1a"  border="1">Y1A<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="y1b"  border="1">Y1B<br align="left"/></td>
+      </tr>
+    </table>
+  >
+]
+!endprocedure
+
+' ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+!procedure $switch_spdt_rev($title, $key1="Клавиша 1")
+[
+  shape = none
+  fontname="Courier"
+  label = <
+    <table border="0" cellspacing="0">
+      <tr><td colspan="3" align="text" border="1" bgcolor="lightgreen">$title</td></tr>
+
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="y1a"  border="1">Y1A<br align="left"/></td>
+        <td colspan="1" rowspan="2" border="1" bgcolor="lightgray">$key1</td>
+        <td colspan="1" rowspan="2" align="text" port="x1"   border="1">X1<br align="left"/></td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1" align="text" port="y1b"  border="1">Y1B<br align="left"/></td>
+      </tr>
     </table>
   >
 ]
