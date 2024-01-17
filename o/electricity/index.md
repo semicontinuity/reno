@@ -26,7 +26,7 @@
   * [Витая пара](cable_lists/utp.md)
 * Расположение розеток и выключателей
   * [Кухня - гарнитур](../design/2d_plans/e__kitchen__set.png)
-  * [Коридор - южная стена](2d_plans/e__corridor__s__outlets.png)
+  * [Коридор - южная стена + свет ванной](2d_plans/e__corridor__s__outlets.png)
   * [Комната - восточная стена](2d_plans/e__room__e__outlets.png)
   * [Перегородка - восточная стена](2d_plans/e__room_stonework__e.png)
     * Щит
