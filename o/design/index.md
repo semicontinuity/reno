@@ -1,6 +1,10 @@
-* [2D план](e__floor_plan-brd.svg)
+* [2D план](2d_plans/e__floor_plan-brd.svg)
 * [Sketch гостиная + кухня](kitchen_living_room.skp)
+  * [screenshot 1](screenshots/kitchen_living_room-1.png)
+  * [screenshot 2](screenshots/kitchen_living_room-2.png)
+  * [screenshot 3](screenshots/kitchen_living_room-3.png)
 * [Sketch ванная](kitchen_living_room.skp)
+  * [screenshot 1](screenshots/bathroom-1.png)
 
 ---
 
