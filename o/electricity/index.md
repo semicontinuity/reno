@@ -5,6 +5,10 @@
 
 #### Проект
 * [Логическая схема щита и линий](tree.svg)
+* Кабельные журналы:
+  * [Силовая проводка](cable_lists/power.md)
+  * [Контрольные кабели](cable_lists/control.md)
+  * [Витая пара](cable_lists/utp.md)
 * Расположение розеток и выключателей
   * [Коридор - южная стена](2d_plans/e__corridor__s__outlets.png)
   * [Комната - восточная стена](2d_plans/e__room__e__outlets.png)
@@ -31,8 +35,3 @@
 * [Разводка фазы в щите](distribution_box/wiring_05_L.svg)
 * [Рейка подвода питания](distribution_box/wiring_10_power_ingress.svg)
 * [Соедининия в линиях освещения - на клеммах в щите - на примере проходного выключателя коридора](distribution_box/wiring_80_3_way_switch.svg)
-
-* Кабельные журналы:
-  * [Силовая проводка](cable_lists/power.md)
-  * [Контрольные кабели](cable_lists/control.md)
-  * [Витая пара](cable_lists/utp.md)
