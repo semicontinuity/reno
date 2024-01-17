@@ -29,3 +29,8 @@
 * [Разводка фазы в щите](distribution_box/wiring_05_L.svg)
 * [Рейка подвода питания](distribution_box/wiring_10_power_ingress.svg)
 * [Соедининия в линиях освещения - на клеммах в щите - на примере проходного выключателя коридора](distribution_box/wiring_80_3_way_switch.svg)
+
+* Кабельные журналы:
+  * [Силовая проводка](cable_lists/power.md)
+  * [Контрольные кабели](cable_lists/control.md)
+  * [Витая пара](cable_lists/utp.md)

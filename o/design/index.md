@@ -7,7 +7,7 @@
   * [screenshot 1](screenshots/bathroom-1.png)
 * [Sketch электрощит](sketches/power_distribution_cabinet.skp)
   * [screenshot 1](screenshots/power-distribution-cabinet-1.png)
-  * [screenshot 1](screenshots/power-distribution-cabinet-2.png)
+  * [screenshot 2](screenshots/power-distribution-cabinet-2.png)
 
 ---
 
