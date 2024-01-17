@@ -14,12 +14,15 @@
 * Сборный распределительный щит от пола для потолка, устраивается в нише шириной 40см и глубиной 12см. Щит закрывается дверцей из ДСП или зеркала соответствующего размера.
   * Собирается из комплектующих системы ABB CombiLine (закуплены)
     * [Примеры монтажа щитов системы CombiLine](https://cs-cs.net/shhity-na-baze-edfwr-panelej-primery-montazha)
+      * [Похожий щит - но узкий, без вставок по бокам - сложности с подвеской дверцы, нет места для проводов по бокам](https://cs-cs.net/wp-uplocmi/2016/03/Untitled-1-scaled.jpg) 
+      * [Похожий щит - но со стеклом](https://cs-cs.net/wp-uploads/2016/03/EDFPan2.jpg) 
     * [Система CombiLine - размеры](https://cs-cs.net/shhity-na-baze-edfwr-panelej-primery-montazha)
     * [Система CombiLine - устройство](https://cs-cs.net/shhity-dlya-elektriki-edf)
     * [Система CombiLine - устройство](https://cs-cs.net/shhity-edf-wr)
 
 #### Проект
 * Все линии заводятся на клеммы в щите.
+    * [Пример](https://cs-cs.net/wp-uploads/2016/03/ShEDF15-HomeKlem.jpg)
   * Включая кабель вызывной панели с лестничной клетки.  
   * Включая кабель домофона на стене коридора.  
 * [Схема сборки щита](distribution_box/distribution_box_layout.svg)
