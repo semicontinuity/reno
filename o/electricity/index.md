@@ -25,9 +25,10 @@
   * [Контрольные кабели](cable_lists/control.md)
   * [Витая пара](cable_lists/utp.md)
 * Расположение розеток и выключателей
+  * [Кухня - гарнитур](../design/2d_plans/e__kitchen__set.png)
   * [Коридор - южная стена](2d_plans/e__corridor__s__outlets.png)
-  * [Комната - восточная стена](2d_plans/e__room_stonework__e.png)
-  * [Перегородка - восточная стена](2d_plans/e)
+  * [Комната - восточная стена](2d_plans/e__room__e__outlets.png)
+  * [Перегородка - восточная стена](2d_plans/e__room_stonework__e.png)
     * Щит
     * Управление освещением комнаты
   * [Ванная - освещение](distribution_box/wiring_90_bathroom_lights.svg)
