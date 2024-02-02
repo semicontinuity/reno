@@ -2,7 +2,8 @@
 
 * Оборудование можно поставить в пространство за потолком сан. узла.
   * Если ориентироваться на высоту потолков сан. узла порядка 240см (кратно размеру керамогранита) то за потолком должно оставаться порядка 30 см, должно хватить.
-  * [Вариант расположения - вид сверху](../design/screenshots/hvac-bathroom-top.png)
+  * [Вариант расположения - вид сверху 1](../design/screenshots/hvac-bathroom-top-1.png)
+  * [Вариант расположения - вид сверху 2](../design/screenshots/hvac-bathroom-top-2.png)
   * [Вариант расположения - вид снизу](../design/screenshots/hvac-bathroom-bottom.png)
 
 * Кондиционирование
@@ -32,6 +33,13 @@
       * Провод МКЭШ 3x0.5 от щита до вентилятора
   * Воздуховоды 125мм + звукоизолирующая оболочка
   * Шумоглушитель 90см
+  * Вент. решетка щелевая
+    * [0](https://grilles.ru/catalog/shhelevye)
+    * [1](https://vin-tel.ru/catalog/reshetki_i_diffuzory/pryamougolnye/reshetka_shchelevaya_shchrpr/)
+    * [2](https://www.gradvent.ru/product-category/shchelevye-diffuzory/g-shchrpr/)
+    * [3](https://ventoshop.ru/catalog/reshetki_ventilyatsionnye/reshetki_shchelevye/)
+    * [4](https://airgrille.ru/shchelevye-reshetki/)
+    * [5](https://www.roomklimat.ru/catalog/ventilyatsiya/reshetki/shchelevye-reshetki/)
   
 * Вытяжка кухни
   * Канальный вентилятор + шумоглушитель для вытяжки варочной поверхности в пространстве самых верхних шкафов кухни.
@@ -44,3 +52,4 @@
       * Провод МКЭШ 3x0.5 от щита до вентилятора
   * Воздуховоды 125мм + звукоизолирующая оболочка
   * Шумоглушитель 90см
+  * [Вент. решетка?](https://www.sharhair.ru/test/tproduct/689933655-142832527071-uzkaya-ventilyatsionnaya-reshetka-long)
