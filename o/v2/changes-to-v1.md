@@ -16,6 +16,9 @@
     * Санузел.
         * Гигиенический душ разместить на большом коробе.
         * Одна теплая стена - стена между прихожей и ванной.
+        * Вент. решетка + подвесные светильники над умывальником
+          * [1](https://dizajninterer.ru/wp-content/uploads/2017/04/Svetilniki-dlya-vannoy-komnatyi-3.jpg) 
+          * [2](https://mebel-vigo.ru/image/blog/snimok-ekrana-2021-11-11-v-13-57-17.png) 
 
 * **Электричество**
   * [Места установок проводных пультов кондиционера, вентиляции](electricity/2d_plans/corridor__s.png)
