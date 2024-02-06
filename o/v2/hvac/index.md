@@ -24,7 +24,7 @@
 * Вытяжная вентиляция
   * Канальный вентилятор + шумоглушитель для вентиляции санузла в пространстве за потолком санузла.
   * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://www.ozon.ru/product/kanalnyy-ventilyator-nizkoprofilnyy-soler-palau-td-evo-100-var-1241844475/?asb2=LIkv2DnK4RzRBy5K17Phin8busZfawgSaVbvHDxMwc8WopWI6S-J-L3cP_mf28_hCgrNlySCSLQui7vIDKWbUpCtvmOpxYC9vZzqCA1eSuo&avtc=1&avte=2&avts=1706871589&keywords=Soler+%26+Palau+TD+EVO-100+VAR)
-    * Вентилятор, возможно, со встроенным обратным клапаном
+    * Отдельный обратный клапан
     * Обернуть слоем звукоизоляции (автомобильной)
     * Монтаж с виброизоляцией
     * Расположить вентилятор в пространстве сантехшкафа, для возможности обслуживания.
@@ -44,7 +44,7 @@
 * Вытяжка кухни
   * Канальный вентилятор + шумоглушитель для вытяжки варочной поверхности в пространстве самых верхних шкафов кухни.
   * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://www.ozon.ru/product/kanalnyy-ventilyator-nizkoprofilnyy-soler-palau-td-evo-100-var-1241844475/?asb2=LIkv2DnK4RzRBy5K17Phin8busZfawgSaVbvHDxMwc8WopWI6S-J-L3cP_mf28_hCgrNlySCSLQui7vIDKWbUpCtvmOpxYC9vZzqCA1eSuo&avtc=1&avte=2&avts=1706871589&keywords=Soler+%26+Palau+TD+EVO-100+VAR)
-    * Вентилятор, возможно, со встроенным обратным клапаном
+    * Отдельный обратный клапан
     * Обернуть слоем звукоизоляции (автомобильной)
     * Монтаж с виброизоляцией
     * Управление скоростью вентилятора с фартука кухни
