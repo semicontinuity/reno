@@ -43,7 +43,10 @@
       * середина - выключатели управления светом гостиной (в мебельной панели)
       * верх до потолка - силовая часть (за большой дверцей)
     * [схема шкафа с эл. щитом](electricity/2d_plans/power_box_layout.svg)
-  * [контрольные кабели](electricity/cable_lists/control.md)
+  * Кабельные журналы:
+    * [силовые кабели](electricity/cable_lists/power.md)
+    * [контрольные кабели](electricity/cable_lists/control.md)
+    * [витая пара](electricity/cable_lists/utp.md)
 
 * [**Вентиляция и кондиционирование**](hvac/index.md)
 * [**Водопровод и канализация**](plumbing/index.md)
