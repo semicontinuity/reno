@@ -48,6 +48,7 @@
       * середина - выключатели управления светом гостиной (в мебельной панели)
       * верх до потолка - силовая часть (за большой дверцей)
     * [схема шкафа с эл. щитом](electricity/2d_plans/power_box_layout.svg)
+  * [примерный порядок клемм в щите](electricity/distribution_box/wiring_01_terminals.svg)
   * Кабельные журналы:
     * [силовые кабели](electricity/cable_lists/power.md)
     * [контрольные кабели](electricity/cable_lists/control.md)
