@@ -23,14 +23,16 @@
 
 * Вытяжная вентиляция
   * Канальный вентилятор + шумоглушитель для вентиляции санузла в пространстве за потолком санузла.
-  * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://www.ozon.ru/product/kanalnyy-ventilyator-nizkoprofilnyy-soler-palau-td-evo-100-var-1241844475/?asb2=LIkv2DnK4RzRBy5K17Phin8busZfawgSaVbvHDxMwc8WopWI6S-J-L3cP_mf28_hCgrNlySCSLQui7vIDKWbUpCtvmOpxYC9vZzqCA1eSuo&avtc=1&avte=2&avts=1706871589&keywords=Soler+%26+Palau+TD+EVO-100+VAR)
-    * Отдельный обратный клапан
-    * Обернуть слоем звукоизоляции (автомобильной)
-    * Монтаж с виброизоляцией
-    * Расположить вентилятор в пространстве сантехшкафа, для возможности обслуживания.
-    * Управление скоростью вентилятора из шкафа в ванной
-      * Провод МКЭШ 3x0.5 от шкафа в ванной в щит
-      * Провод МКЭШ 3x0.5 от щита до вентилятора
+    * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://www.ozon.ru/product/kanalnyy-ventilyator-nizkoprofilnyy-soler-palau-td-evo-100-var-1241844475/?asb2=LIkv2DnK4RzRBy5K17Phin8busZfawgSaVbvHDxMwc8WopWI6S-J-L3cP_mf28_hCgrNlySCSLQui7vIDKWbUpCtvmOpxYC9vZzqCA1eSuo&avtc=1&avte=2&avts=1706871589&keywords=Soler+%26+Palau+TD+EVO-100+VAR)
+    * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://market.yandex.ru/product--vytiazhnoi-ventiliator-kanalnyi-soler-palau-td-evo-100/930932279?sponsored=1&sku=101290163247&do-waremd5=4RIKPuFDyCE4gYBi0OtSYg&uniqueId=54517551&cpc=oLbptLHj3L8ki0YyblgImokZhAGFJljTP1rIJNxN_ILQ4SLXmb2jwckQVUOflmDkZc65GgOUfWMdJ3fnRhfgUOmIsy6KIiLEAhXI8hKSin7WNQRouXnWZam2CXwz3QXGNEo3iQ-l22eOeRhELywY1TDOHpFF4xTZR5jYCxcSgQD-LthlBWVIiudo9OkJMasncTVvYWRlfxThIHMNXMydsOY-ENxEsonuk3UAuPdlJyoduz7D0icuL2nsIPW1GG3r1Elctmk73Xon37soyCvO6w%2C%2C)
+    * [Подходящая модель вентилятора: Soler & Palau TD EVO-100 VAR](https://statics.solerpalau.com/media/import/documentation/Ins_TD-EVO_100-125.pdf)
+      * Отдельный обратный клапан
+      * Обернуть слоем звукоизоляции (автомобильной)
+      * Монтаж с виброизоляцией
+      * Расположить вентилятор в пространстве сантехшкафа, для возможности обслуживания.
+      * Управление скоростью вентилятора из шкафа в ванной
+        * Провод МКЭШ 3x0.5 от шкафа в ванной в щит
+        * Провод МКЭШ 3x0.5 от щита до вентилятора
   * Воздуховоды 125мм + звукоизолирующая оболочка
   * Шумоглушитель 90см
   * Вент. решетка щелевая
@@ -40,6 +42,7 @@
     * [3](https://ventoshop.ru/catalog/reshetki_ventilyatsionnye/reshetki_shchelevye/)
     * [4](https://airgrille.ru/shchelevye-reshetki/)
     * [5](https://www.roomklimat.ru/catalog/ventilyatsiya/reshetki/shchelevye-reshetki/)
+    * [6](https://www.vtvent.ru/ventilyacionnye-reshetki/diffuzory/)
   
 * Вытяжка кухни
   * Канальный вентилятор + шумоглушитель для вытяжки варочной поверхности в пространстве самых верхних шкафов кухни.
@@ -53,3 +56,4 @@
   * Воздуховоды 125мм + звукоизолирующая оболочка
   * Шумоглушитель 90см
   * [Вент. решетка?](https://www.sharhair.ru/test/tproduct/689933655-142832527071-uzkaya-ventilyatsionnaya-reshetka-long)
+  * [Вент. решетка?](https://market.yandex.ru/product--kk-w80800/1777245911?sku=101853819899&do-waremd5=hjY2czU8PLIwthhnYnO1aQ&uniqueId=772571&cpc=_Web4EWbu2XC5faoCCVsDf1Le_SS-NqHHMgS4dZbooJ0nJPuJeoeIXZT0pCw7289rwZzmp2aeqtLR5IV4torpV0AGLgrHtG5m_GPS_xQGBZ18DjRYcELxjpLb3PYnLcfC3eHdY2GrZoaBity8_LkxPmVcGiIk21bYOprBgpiTjox2EQuTZQclXsGnEMXOwHh2XyeSj4S86Z_DT6Su851sA%2C%2C)
